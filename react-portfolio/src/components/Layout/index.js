@@ -1,8 +1,12 @@
-import { lazy } from 'react'
+import Sidebar from '../Sidebar'
 import './index.scss'
 
 const Layout = () => {
-  return <>Hello Wolrd</>
+  return (
+    <>
+      <Sidebar />
+    </>
+  )
 }
 
 export default Layout
