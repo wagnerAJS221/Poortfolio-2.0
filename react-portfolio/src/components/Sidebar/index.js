@@ -3,12 +3,12 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {
-  faHome,
-  faUser,
-  faEnvelope,
   faLinkedin,
-} from '@fortawesome/free-solid-svg-icons'
+  faGithub,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -45,6 +45,20 @@ const Sidebar = () => (
           href="https://www.linkedin.com/in/alex-wagner-790002227/"
         >
           <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/wagnerAJS221"
+        >
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noreferrer" href="about:blank">
+          <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
         </a>
       </li>
     </ul>
