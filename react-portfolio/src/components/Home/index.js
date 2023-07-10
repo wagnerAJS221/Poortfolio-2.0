@@ -1,7 +1,9 @@
-// import LogoTitle from '../../assets/images/logo-s.png'
+/* eslint-disable no-unused-vars */
+import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
+import Loader from 'react-loaders'
 import './index.scss'
-import Logo from './Logo'
+import Logo from '../Home/Logo'
 import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect } from 'react'
@@ -26,11 +28,13 @@ const Home = () => {
     '.',
   ]
 
-  useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
+  // the destroy function issue is coming form here somehow.
+
+  // useEffect(() => {
+  //   return setTimeout(() => {
+  //     setLetterClass('text-animate-hover')
+  //   }, 4000)
+  // }, [])
 
   return (
     <div className="container home-page">
