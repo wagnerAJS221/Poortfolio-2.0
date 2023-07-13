@@ -20,7 +20,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         'gmail',
-        'template_t0a603o',
+        process.env.REACT_APP_TEMPLATE_ID,
         refForm.current,
         process.env.REACT_APP_EMAIL_KEY
       )
