@@ -4,10 +4,12 @@ import Home from './components/Home'
 import Layout from './components/Layout'
 import About from './components/About'
 import Contact from './components/Contact'
+import Sidebar from './components/Sidebar'
 
 function App() {
   return (
     <>
+      <Sidebar />
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route index element={<Home />} />

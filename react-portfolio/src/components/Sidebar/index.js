@@ -1,7 +1,5 @@
 import './index.scss'
 import { useState } from 'react'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
@@ -24,10 +22,7 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/" onClick={() => setShowNav(false)}>
-        <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
-      </Link>
+      <Link className="logo" to="/" onClick={() => setShowNav(false)}></Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink
           exact="true"
@@ -72,7 +67,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/alex-wagner-790002227/"
             target="_blank"
             rel="noreferrer"
           >
