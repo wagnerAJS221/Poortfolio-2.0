@@ -33,9 +33,22 @@ function About() {
               idx={15}
             />
           </h1>
-          <p>About me text to go here</p>
-          <p>2nd About me text to go here </p>
-          <p>3rd About me text to go here</p>
+          <p>
+            As you may have seen on the home page, my name is Alex Wagner and I
+            am a recent graduate from Boolean UK. I have training as a Fullstack
+            Developer
+          </p>
+          <p>
+            I am a aspiring Software developer who is passionate about tech and
+            continuously amazed by what we can achieve with tech and how it can
+            be used to improve the lives of thousands. That is certainly
+            something I want to be apart of!
+          </p>
+          <p>
+            My Current Tech Stack is React.Js, JavaScript, HTML, CSS, Node.js
+            and I experience working with expressSQL, AWS, OOP as well as Agile
+            development techniques.
+          </p>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
@@ -56,6 +69,23 @@ function About() {
             </div>
             <div className="face6">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            </div>
+          </div>
+          <div className="techstack-icons">
+            <div className="techStack1">
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" size="3x" />
+            </div>
+            <div className="ftechStack2">
+              <FontAwesomeIcon icon={faCss3} color="#28A4D9" size="3x" />
+            </div>
+            <div className="techStack3">
+              <FontAwesomeIcon icon={faHtml5} color="#F06529" size="3x" />
+            </div>
+            <div className="techStack4">
+              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" size="3x" />
+            </div>
+            <div className="techStack5">
+              <FontAwesomeIcon icon={faGitSquare} color="#EC4D28" size="3x" />
             </div>
           </div>
         </div>
