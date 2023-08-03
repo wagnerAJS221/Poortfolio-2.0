@@ -56,13 +56,13 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-        <FontAwesomeIcon
+        {/* <FontAwesomeIcon
           onClick={() => setShowNav(false)}
           icon={faClose}
           color="#ffd700"
           size="3x"
           className="close-icon"
-        />
+        /> */}
       </nav>
       <ul>
         <li>
@@ -104,23 +104,14 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon
-              icon={faSkype}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
       </ul>
-      <FontAwesomeIcon
+      {/* <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
         color="#ffd700"
         size="3x"
         className="hamburger-icon"
-      />
+      /> */}
     </div>
   )
 }

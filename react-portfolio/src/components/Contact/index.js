@@ -47,7 +47,7 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>Reasons for contacting me, go here</p>
+          <p>If you would like to get in touch, contact me below!</p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
