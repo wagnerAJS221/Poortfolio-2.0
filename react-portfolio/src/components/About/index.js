@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCss3,
@@ -10,17 +9,12 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
+  faVuejs,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 function About() {
-  const [letterClass, setLetterClass] = useState('text-animate')
-
-  //   useEffect(() => {
-  //     return setTimeout(() => {
-  //       setLetterClass('text-animate-hover')
-  //     }, 4000)
-  //   }, [])
+  const [letterClass] = useState('text-animate')
 
   return (
     <>
@@ -35,19 +29,19 @@ function About() {
           </h1>
           <p>
             As you may have seen on the home page, my name is Alex Wagner and I
-            am a recent graduate from Boolean UK. I have training as a Fullstack
-            Developer
+            am a graduate from Boolean UK. I have training as a Fullstack
+            Developer, although I am focused primarily on the Frontend.
           </p>
           <p>
-            I am a aspiring Software developer who is passionate about tech and
-            continuously amazed by what we can achieve with tech and how it can
-            be used to improve the lives of thousands. That is certainly
-            something I want to be apart of!
+            I am a aspiring Software developer/Wed designer who is passionate
+            about tech and continuously amazed by what we can achieve with tech
+            and how it can be used to improve the lives of thousands. That is
+            certainly something I want to be apart of!
           </p>
           <p>
-            My Current Tech Stack is React.Js, JavaScript, HTML, CSS, Node.js
-            and I experience working with expressSQL, AWS, OOP as well as Agile
-            development techniques.
+            My Current Tech Stack is React.Js, JavaScript,Vue.Js, HTML, CSS,
+            Node.js and I experience working with expressSQL, AWS, OOP as well
+            as Agile development techniques.
           </p>
         </div>
         <div className="stage-cube-cont">
@@ -68,12 +62,15 @@ function About() {
               <FontAwesomeIcon icon={faGitSquare} color="#EC4D28" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+              <FontAwesomeIcon icon={faVuejs} color="#5ED4F4" />
             </div>
           </div>
           <div className="techstack-icons">
             <div className="techStack1">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" size="3x" />
+            </div>
+            <div className="techStack1">
+              <FontAwesomeIcon icon={faVuejs} color="#5ED4F4" size="3x" />
             </div>
             <div className="ftechStack2">
               <FontAwesomeIcon icon={faCss3} color="#28A4D9" size="3x" />
